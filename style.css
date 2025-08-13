@@ -3,6 +3,31 @@ body {
   margin: 0;
   background: #f9f9f9;
 }
+
+
+.gallery {
+  display: flex;
+  justify-content: center; 
+  gap: 20px; 
+}
+
+
+.gallery img {
+  width:10px;   
+  height: auto;   
+  border-radius: 8px; 
+}
+
+.pic {
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.h1{
+  position: center;
+  text-align: center;
+  background-color: #4CAF50;
+}
 .site-header {
   background: #4CAF50;
   color: white;
