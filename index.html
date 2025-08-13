@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Garden Grove Restaurant</title>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+  <header class="site-header">
+    <h1>Garden Grove Restaurant</h1>
+    <nav>
+      <a href="#reserve">Reserve</a>
+      <a href="#gallery">Gallery</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Fresh Flavors, Beautiful Views</h2>
+    <p>Reserve your table and enjoy the scenery.</p>
+  </section>
+
+  <main>
+    <!-- Reservation Form -->
+    <section id="reserve" class="card">
+      <h3>Reserve a Table</h3>
+      <form id="searchForm">
+        <label>Date: <input type="date" id="date" required></label>
+        <label>Time: <input type="time" id="time" required></label>
+        <label>Guests:
+          <select id="guests">
+            <option>2</option><option>4</option><option>6</option><option>8</option>
+          </select>
+        </label>
+        <button type="submit">Check Availability</button>
+      </form>
+      <div id="tablesGrid" class="tables-grid"></div>
+    </section>
+
+    <!-- Scenic Gallery -->
+    <section id="gallery" class="card">
+      <h3>Our Scenery</h3>
+      <div class="gallery">
+        <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?q=80&w=800" alt="Outdoor dining">
+        <img src="https://images.unsplash.com/photo-1528605248644-14dd04022da1?q=80&w=800" alt="Sunset terrace">
+        <img src="https://images.unsplash.com/photo-1498837167922-ddd27525d352?q=80&w=800" alt="Fresh food">
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
